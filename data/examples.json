@@ -1,0 +1,8 @@
+{
+  "classificacao_sentimento": [
+    { "input": "Adorei!", "output": "POSITIVO" },
+    { "input": "Péssimo.", "output": "NEGATIVO" },
+    { "input": "Foi ok, nada demais.", "output": "NEUTRO" },
+    { "input": "Bom preço mas qualidade média.", "output": "MISTO" }
+  ]
+}
