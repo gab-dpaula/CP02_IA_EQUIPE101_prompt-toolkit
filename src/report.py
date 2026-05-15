@@ -16,7 +16,15 @@ def grafico_custo(resultados):
     df.groupby("tecnica")["tokens"].mean().plot(kind="bar")
     plt.savefig("output/graficos/custo.png")
 
+def grafico_temperatura(resultados):
+    df = pd.DataFrame(resultados)
+    df.groupby("temperatura")["acuracia"].mean().plot(kind="bar")
+    plt.savefig("output/graficos/temperatura.png")
+
+
 def recomendar(resultados):
     df = pd.DataFrame(resultados)
     melhor = df.groupby("tecnica")["acuracia"].mean().idxmax()
-    print(f"Melhor técnica: {melhor}")
+    print(f"Melhor técnica: {melhor}(maior acuracia apresentada)")
+
+    return melhor

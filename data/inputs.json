@@ -5,5 +5,11 @@
     {"input": "Bom preço mas qualidade média.", "esperado": "MISTO"},
     {"input": "Entrega atrasada mas produto ok.", "esperado": "NEUTRO"},
     {"input": "Gostei do atendimento, mas produto ruim.", "esperado": "MISTO"}
+  ],
+  "extracao": [
+    
+  ],
+  "sumarizacao": [
+    
   ]
 }
