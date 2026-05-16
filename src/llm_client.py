@@ -5,7 +5,7 @@ class LLMClient:
     def __init__(self):
         self.host = os.getenv("OLLAMA_HOST", "http://localhost:11434")
 
-    def chat(self, prompt, system=None, temp=0.7, max_tokens=512):
+    def chat(self, prompt, system=None, temp=0.7, max_tokens=400):
         try:
             response = requests.post(
                 f"{self.host}/api/generate",

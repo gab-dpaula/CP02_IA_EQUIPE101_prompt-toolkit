@@ -65,10 +65,30 @@
 ```
 
 
- 
+
+## baixando projeto
+
+com as dependências instaladas, clone o repositorio do projeto em seu computador e depois entre na pasta
+
+
+```base
+
+git clone https://github.com/gab-dpaula/CP02_IA_EQUIPE101_prompt-toolkit.git
+
+
+cd CP02_IA_EQUIPE101_prompt-toolkit
+```
 
 ## instalação de dependências
 
+
+### python e pip
+
+instale as dependências referentes ao python a partir do arquivo requirements.txt
+
+```base
+pip install -r requirements.txt
+```
 
 ### ollama
 
@@ -105,6 +125,9 @@ curl -fsSL https://ollama.com/install.sh | sh
 
 ```
 
+
+
+
 ### Execusão do modelo
  
 após ter o ollama em sua maquina, rode com o modelo preferido
@@ -113,20 +136,6 @@ após ter o ollama em sua maquina, rode com o modelo preferido
 ```base
 
 ollama run gpt-oss:120b
-
-```
-
-## baixando projeto
-
-com as dependências instaladas, clone o repositorio do projeto em seu computador e depois entre na pasta
-
-
-```base
-
-git clone https://github.com/gab-dpaula/CP02_IA_EQUIPE101_prompt-toolkit.git
-
-
-cd CP02_IA_EQUIPE101_prompt-toolkit
 
 ```
 
@@ -141,7 +150,7 @@ MODEL=gpt-oss:120b
 
 ## Excusão
 
-dentro do diretório do projeto rode o arquivo main.py
+dentro do diretório do projeto, rode o arquivo main.py
 
 
 ```bash

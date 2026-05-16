@@ -1,15 +1,110 @@
 {
   "classificacao_sentimento": [
-    {"input": "Produto excelente, chegou rápido!", "esperado": "POSITIVO"},
-    {"input": "Veio quebrado, péssimo.", "esperado": "NEGATIVO"},
-    {"input": "Bom preço mas qualidade média.", "esperado": "MISTO"},
-    {"input": "Entrega atrasada mas produto ok.", "esperado": "NEUTRO"},
-    {"input": "Gostei do atendimento, mas produto ruim.", "esperado": "MISTO"}
+    {"input": "Simplesmente amei, ele é lindo, um designer impecável, cameras excelentes, e a bateria aguentou 2 dias comigo. Estava com medo, pois nunca comprei nenhum eletrônico pela internet, mais me surpreendi.", "esperado": "POSITIVO"},
+    {"input": "Lento de mais. Não vale a pena.", "esperado": "NEGATIVO"},
+    {"input": "Produto veio danificado bateria descarrega rápido,fora que o produto esquenta demais, não indico a ninguém.", "esperado": "NEGATIVO"},
+    {"input": "Mixuruca, mas pelo valor até que tá ok.", "esperado": "NEUTRO"},
+    {"input": "Nada de outro mundo, pelo preço está bom.", "esperado": "NEUTRO"}
   ],
-  "extracao": [
+  "extracao_problema": [
+    {
+      "input": "recentemente comprei o Notebook Positivo Vision, nas primeiras semanas ele tinha um desempenho consideravel, mas dois meses após a compra ele veio a apresentar falhas no desempenho",
+      "esperado": {
+        "produto": "Notebook Positivo Vision",
+        "problema": "falhas no desempenho",
+        "periodo": "POSTERIOR"
+      }
+    },
+    {
+      "input": "minha TV veio com problemas na imagem",
+      "esperado": {
+        "produto": "TV",
+        "problema": "problemas na imagem",
+        "periodo": "INICIAL"
+      }
+    },
+    {
+      "input": "meu headset veio sem som, quero a devolução",
+      "esperado": {
+        "produto": "headset",
+        "problema": "sem som",
+        "periodo": "INICIAL"
+      }
+    },
+    {
+      "input": "Sobre o celular,ele é ótimo. Muito bom mesmo,a bateria dura,a câmera é boa,tem um bom processamento. Mas o problema é veio sem fone de ouvido.",
+      "esperado": {
+        "periodo": "INICIAL",
+        "problema": "sem fone de ouvido",
+        "produto": "celular"
+      }
+    },
+    {
+      "input": "Estava tudo ok, porém agora o celular não está ligando.",
+      "esperado": {
+        "periodo": "POSTERIOR",
+        "problema": "não esta ligando",
+        "produto": "celular"
+      }
+    }
     
   ],
-  "sumarizacao": [
-    
+  
+  "sumarizacao_descricao": [
+    {
+      "input": "O Smartphone Motorola Moto g86 5G é a combinação perfeita de desempenho, inovação e estilo. Com uma impressionante capacidade de 256 GB de armazenamento interno e 24 GB de RAM (8 GB RAM + 16 GB Ram Boost), você terá espaço e velocidade suficientes para todas as suas necessidades, desde jogos até a captura de vídeos em 4K. Sua tela 1.5K pOLED de 6,7 polegadas com taxa de atualização de 120 Hz garante uma experiência visual imersiva e suave, ideal para gamers e para quem consome conteúdo multimídia. A versatilidade da câmera principal de 50 MP, projetada com tecnologia Sony e OIS, permite que você capture imagens nítidas e vibrantes, enquanto a câmera frontal de 32 MP é perfeita para selfies impressionantes.",
+      "esperado": [
+        "Motorola g85",
+        "256GB",
+        "24GB",
+        "5G",
+        "4K",
+        "6,7"
+      ]
+    },
+    {
+      "input": "Experimente a excelência do entretenimento em casa com o Combo Samsung Smart TV 55 Crystal UHD 4K U8100F e Soundbar HW-B450F. A Smart TV de 55 polegadas oferece uma qualidade de imagem impressionante, com resolução 4K UHD, que traz cores vibrantes e detalhes nítidos para suas séries e filmes favoritos.",
+      "esperado": [
+        "Samsung Smart TV 55 Crystal",
+        "UHD",
+        "4K",
+        "HW-B450F",
+        "55",
+        "polegadas"
+      ]
+    },
+    {
+      "input": "O Notebook Dell Inspiron i15-i1300-A30P é a escolha perfeita para quem busca desempenho e praticidade em um design elegante. Com um processador Intel Core i5 que atinge velocidades de até 4.6 GHz, oferece agilidade nas tarefas diárias, seja para estudos, trabalho ou entretenimento. Seu display Full HD de 15.6” com resolução de 1920 x 1080 proporciona uma experiência visual imersiva, ideal para assistir vídeos ou realizar videoconferências com clareza. Equipada com 8 GB de memória RAM DDR4 (expansível até 16GB – 2 slots soDIMM) e um SSD PCIe de 512 GB, a Notebook garante um desempenho rápido e eficiente, permitindo o armazenamento de documentos e aplicativos sem comprometer a performance. ",
+      "esperado": [
+        "Notebook Dell Inspiron",
+        "i150-i300-A30P",
+        "4.6",
+        "GHz",
+        "15.6",
+        "516",
+        "8"
+      ]
+    },
+    {
+      "input": "Com drivers de 40 mm, o headset JBL Quantum 100M2 entrega áudio preciso e potente, garantindo clareza desde os agudos nítidos até os graves mais intensos. Seja para músicas, jogos ou chamadas, sua resposta de frequência de 20 Hz a 20 kHz oferece uma experiência sonora envolvente e de alto nível. Cada detalhe é realçado para uma imersão completa no seu conteúdo favorito.",
+      "esperado": [
+        "headset JBL Quantum",
+        "100M2",
+        "44 mm",
+        "20 Hz"
+      ]
+    },
+    {
+      "input": "O Xiaomi Poco X7 Pro 5G é um smartphone de alto desempenho, ideal para usuários que buscam agilidade e eficiência em suas tarefas diárias. Com 512 GB de memória interna e 12 GB de RAM, você terá espaço de sobra para armazenar seus aplicativos, fotos e vídeos, proporcionando uma experiência fluida e sem interrupções. Equipado com o poderoso processador MediaTek Dimensity 8400 Ultra, com velocidade de até 3,25 GHz, este dispositivo é perfeito para gamers e profissionais que exigem performance superior. A conectividade 5G garante que você esteja sempre conectado com alta velocidade, permitindo downloads rápidos e streaming sem buffering.",
+      "esperado": [
+        "Xiaomi Poco X7 Pro",
+        "512",
+        "12",
+        "8400",
+        "3,25",
+        "5G"
+      ]
+    }
   ]
+  
 }

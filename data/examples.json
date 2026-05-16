@@ -2,11 +2,23 @@
   "classificacao_sentimento": [
     { "input": "Adorei!", "output": "POSITIVO" },
     { "input": "Péssimo.", "output": "NEGATIVO" },
-    { "input": "Foi ok, nada demais.", "output": "NEUTRO" },
-    { "input": "Bom preço mas qualidade média.", "output": "MISTO" }
+    { "input": "Foi ok, nada demais.", "output": "NEUTRO" }
   ],
-  "extracao": [
-
+  "sumarizacao_descricao": [
+    {
+      "input": "O Smartphone Motorola G06 é a escolha ideal para quem busca desempenho, inovação e estilo. Com uma generosa capacidade interna de 256GB e 12GB de RAM (4GB + 8GB de Boost), você terá espaço e fluidez suficientes para armazenar suas memórias, aplicativos e jogos, sem preocupações com lentidão. A tela de 6,9 polegadas com resolução HD+ e taxa de atualização de 120Hz oferece imagens vibrantes e uma experiência visual imersiva, perfeita para streaming e navegação.",
+      "output": "O Motorola G06 oferece 256GB de armazenamento e 12GB de RAM (4GB+8GB Boost) para fluidez total, tela HD+ 120Hz para experiência visual imersiva, e design moderno para atender a quem busca desempenho, inovação e estilo."
+    }
   ],
-  "sumarizacao": []
+  "extracao_problema": [
+    {
+      "input": "meu celular chegou com a tela rachada",
+      "output": "{ 'produto': 'celular', 'periodo': 'INICIAL', 'problema': 'tela rachada' }"
+    },
+    {
+      "input": "meu fone de ouvido veio muito bom, mas conforme os dias foram passado ele começou a perder o som",
+      "output": "{ 'produto': 'fone de ouvido', 'periodo': 'POSTERIOR', problema: 'perda de som' }"
+    }
+  ]
+   
 }
